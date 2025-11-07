@@ -1,4 +1,5 @@
 ## 🚴‍♂️ Rapido Riders Analysis Dashboard
+![Image]()
 ## 📘 Project Overview
 This project analyzes Rapido ride data to extract operational and commercial insights.  
 We use **MySQL** for data ingestion, cleaning, transformation and analytical queries, and **Power BI** for interactive visualizations and dashboarding.
@@ -311,7 +312,7 @@ CALL payment_breakdown();
 - Cancellation Rate
 - Common Routes
 - Revenue Lost from Cancellations
-![image](https://github.com/sainanthan/Rapido_riders_analysis/blob/main/ride_performance_overiew.png)
+![image](https://github.com/sainanthan/Rapido_riders_analysis/blob/main/business_operations_insight.png)
 
 ---
 ## 💡 Key Business Recommendations:
