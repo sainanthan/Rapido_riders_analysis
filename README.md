@@ -1,8 +1,10 @@
-## 🚴‍♂️ Rapido Riders Analysis Dashboard
-![Image]()
-## 📘 Project Overview
-This project analyzes Rapido ride data to extract operational and commercial insights.  
-We use **MySQL** for data ingestion, cleaning, transformation and analytical queries, and **Power BI** for interactive visualizations and dashboarding.
+## 🚴‍♂️ Rapido Riders Analysis
+![Image](https://github.com/sainanthan/Rapido_riders_analysis/blob/main/Rapido.jpg)
+
+## 📘 Project Overview:
+This project analyzes Rapido riders data to extract operational and commercial insights.  
+I used **MySQL** for data ingestion, cleaning, transformation and analytical queries, and **Power BI** for interactive visualizations and dashboarding.
+
 **Primary goals**
 - Understand ride demand patterns (hour/day/city).  
 - Measure revenue and losses (including cancellations).  
@@ -11,24 +13,23 @@ We use **MySQL** for data ingestion, cleaning, transformation and analytical que
 
 ---
 
-## 🛠️ Tools & Artifacts
+## 🛠️ Tools & Artifacts:
 - **MySQL** — schema, cleaning, transformations, views, stored procedures.  
 - **Power BI Desktop** — interactive dashboards (2 pages).  
 - **CSV** — `rides_cleaned.csv` (final cleaned dataset exported from MySQL).  
 - **Presentation** — `Rapido_Analysis_PPT.pptx`.  
-- **Repository structure** (see lower down).
 
 ---
 
-## 📂 Dataset
-**File:** `data/rides_cleaned.csv`  
+## 📂 Dataset:
+**File:** `data/rides_data.csv`  
 **Example columns:**  
 `services, date, time, ride_status, source, destination, duration, ride_id, distance, ride_charge, misc_charge, total_fare, payment_method, ...`
 
 
 ---
 
-## ⚙️ Reproducible Setup — MySQL (Quick)
+## ⚙️ Reproducible Setup:
 1. Create database and table:
 ```sql
 CREATE DATABASE rapido_project;
@@ -113,7 +114,7 @@ SET ride_hour = HOUR(time),
 ```
 ---
 
-## 🧮 SQL Queries — Business Problems
+## 🧮 Business Problems:
 1) Total Rides & Total Revenue:
 ```sql
 SELECT
@@ -237,8 +238,8 @@ ORDER BY avg_duration_min DESC;
 ```
 ---
 
-## 🧰 Stored Procedures
--- Procedure 1 — Daily Summary
+## 🧰 Stored Procedures:
+Procedure 1 — Daily Summary
 ```sql
 DELIMITER $$
 CREATE PROCEDURE daily_summary(IN target_date DATE)
@@ -259,7 +260,7 @@ DELIMITER ;
 CALL daily_summary('2024-07-15');
 ```
 
--- Procedure 2 — Service Report
+Procedure 2 — Service Report
 ```sql
 DELIMITER $$
 CREATE PROCEDURE service_report()
@@ -279,7 +280,7 @@ DELIMITER ;
 CALL service_report();
 ```
 
--- Procedure 3 — Payment Breakdown
+Procedure 3 — Payment Breakdown
 ```sql
 DELIMITER $$
 CREATE PROCEDURE payment_breakdown()
@@ -316,9 +317,16 @@ CALL payment_breakdown();
 
 ---
 ## 💡 Key Business Recommendations:
-- 1️⃣ Optimize Driver Allocation: Increase active riders in high-demand hours and routes.
-- 2️⃣ Encourage Digital Payments: Offer UPI cashback/rewards to boost seamless payments.
-- 3️⃣ Reduce Cancellations: Introduce penalties or AI-based ETA improvements.
-- 4️⃣ Dynamic Pricing: Adjust fares during off-peak hours to increase ridership.
-- 5️⃣ Customer Loyalty Program: Reward frequent riders to improve retention.
-- 6️⃣ Operational Monitoring: Automate real-time tracking of ride completion rate.
+-  Optimize Driver Allocation: Increase active riders in high-demand hours and routes.
+-  Encourage Digital Payments: Offer UPI cashback/rewards to boost seamless payments.
+-  Reduce Cancellations: Introduce penalties or AI-based ETA improvements.
+-  Dynamic Pricing: Adjust fares during off-peak hours to increase ridership.
+-  Customer Loyalty Program: Reward frequent riders to improve retention.
+-  Operational Monitoring: Automate real-time tracking of ride completion rate.
+
+---
+## 🏁 Impact & Takeaways:
+- 📊 Power BI provided clear visibility into key performance indicators.
+- 🧩 SQL simplified data extraction, cleaning, and business insights.
+- 💡 The analysis supports data-driven operational decisions.
+- 🚀 Foundation for AI-driven forecasting and pricing optimization.
