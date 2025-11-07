@@ -299,18 +299,19 @@ CALL payment_breakdown();
 
 ## 📈 Insights & Visualizations:
 **Page 1**
-– Ride & Revenue Overview
+– Ride Performance Overview
 - Total Rides, Total Revenue, Avg Fare
 - Revenue by Service Type
 - Rides by Time & Day
-![image]
+![image](https://github.com/sainanthan/Rapido_riders_analysis/blob/main/ride_performance_overiew.png)
 
 **Page 2** 
-– Customer & Operational Insights
+– Business & Operations Insights
 - Payment Method Trends
 - Cancellation Rate
 - Common Routes
 - Revenue Lost from Cancellations
+![image](https://github.com/sainanthan/Rapido_riders_analysis/blob/main/ride_performance_overiew.png)
 
 ---
 ## 💡 Key Business Recommendations:
