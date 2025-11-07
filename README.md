@@ -303,6 +303,9 @@ CALL payment_breakdown();
 - Total Rides, Total Revenue, Avg Fare
 - Revenue by Service Type
 - Rides by Time & Day
+<p align="center">
+  <img src=".png" alt="A centered screenshot" width="500"/>
+</p>
 
 **Page 2** 
 – Customer & Operational Insights
